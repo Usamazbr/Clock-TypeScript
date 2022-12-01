@@ -13,7 +13,7 @@ function App() {
       <Timer name='' gmt={0}/>
       <div className='flex flex-row rounded-lg'>
         <div className='w-full'></div>
-        <div className='flex flex-row m-2 mr-14 mx-6 space-x-4'>
+        <div className='flex flex-row m-2 mr-14 mx-6 space-x-2'>
           {zone.list.map((place)=><Timer name={place.name} gmt={place.gmt}/>)}
         </div>
       </div>
