@@ -1,0 +1,32 @@
+{
+    "list": [
+      {
+      "name": "Los Angeles",
+      "gmt": -13
+      },
+        {
+        "name": "New York",
+        "gmt": -10
+        },
+        {
+        "name": "London",
+        "gmt": -5
+        },
+        {
+        "name": "Paris",
+        "gmt": -4
+        },
+        {
+        "name": "Kyiv",
+        "gmt": -3
+        },
+        {
+        "name": "Beijing",
+        "gmt": 3
+        },
+        {
+        "name": "Tokyo",
+        "gmt": 4
+        }
+      ]
+}

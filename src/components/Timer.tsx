@@ -6,6 +6,7 @@ type TimerProps = {
 
 const Timer = (props:TimerProps) => {
     const [nTime, setNTime] = useState(new Date())
+    // const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     
     useEffect(() => {
         
@@ -20,19 +21,19 @@ const Timer = (props:TimerProps) => {
 
 
     return ( 
-        <div className="flex flex-col m-4">
-            <h1 className="m-2 mx-auto text-xl text-green-400 font-semibold">{props.name}</h1>
-            <div className="flex flex-row">
-                <div className="w-1/6"></div>
-                <h2 className="m-2 mx-auto text-9xl text-white font-semibold">
-                    {nTime.toLocaleTimeString()}
+        <div className={`flex flex-col mx-auto ${props.name? "bg-gray-700":""} rounded-lg`}>
+            {props.name && <h1 className="text-xl text-green-400 text-right font-semibold rounded-lg">{props.name}</h1>}
+                <h2 className={`mx-auto ${props.name? "w-full text-lg text-right":"ml-40 text-xl18"}  text-white font-semibold font-mono rounded-lg`}>
+                    {nTime.toLocaleTimeString('en-GB')}
                 </h2>
+            <div className="w-36 rounded-lg">
             </div>
-            <div className="flex flex-row">
-                <h2 className="m-2 mx-auto text-4xl text-yellow-400 font-semibold">
-                    {nTime.toLocaleDateString()}
+            {!props.name && <div className="flex flex-row">
+                <div className="w-1/2 rounded-lg"></div>
+                <h2 className="ml-48 text-4xl text-yellow-400 font-semibold rounded-lg">
+                    {nTime.toLocaleDateString("en-GB", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
                 </h2>
-            </div>
+            </div>}
         </div>
     );
 }

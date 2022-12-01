@@ -1,31 +1,22 @@
 // import { useState, useEffect } from "react";
 import Greet from './components/Greet';
+import Navbar from './components/Navbar';
 import Timer from './components/Timer';
+import zone from "./data/capitals.json";
 
 function App() {
 
-  const zoneList = [
-    {
-    name: 'New York',
-    gmt: -10
-    },
-    {
-    name: 'London',
-    gmt: -5
-    },
-    {
-    name: 'Tokyo',
-    gmt: 4
-    }
-  ]
-
   return (
     <div className="flex flex-col text-white">
+      <Navbar/>
       <Greet name='Pakistan' msgcount={0} isLoggedIn={false}/>
-      <Timer name='Pakistan' gmt={0}/>
-      <Timer name={zoneList[0].name} gmt={zoneList[0].gmt}/>
-      <Timer name={zoneList[1].name} gmt={zoneList[1].gmt}/>
-      <Timer name={zoneList[2].name} gmt={zoneList[2].gmt}/>
+      <Timer name='' gmt={0}/>
+      <div className='flex flex-row rounded-lg'>
+        <div className='w-full'></div>
+        <div className='flex flex-row m-2 mr-14 mx-6 space-x-4'>
+          {zone.list.map((place)=><Timer name={place.name} gmt={place.gmt}/>)}
+        </div>
+      </div>
       
     </div>
   );
