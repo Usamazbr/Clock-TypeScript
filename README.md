@@ -18,7 +18,7 @@ Visit the live demo: [clock-type-script.vercel.app](https://clock-type-script.ve
 
 ### Prerequisites
 Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation
