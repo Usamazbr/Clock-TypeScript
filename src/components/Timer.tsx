@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 type TimerProps = {
   name: string;
   gmt: number;
@@ -9,13 +10,23 @@ const Timer = ({ name, gmt, small }: TimerProps) => {
   const [nTime, setNTime] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => setNTime(() => new Date()), 1_000);
+    // Update the time every second
+    const interval = setInterval(() => setNTime(new Date()), 1_000);
 
     return () => {
       clearInterval(interval);
     };
-  }, [setNTime]);
-  console.log(gmt);
+  }, []);
+
+  // Adjust the time based on GMT offset, using UTC as the base
+  const adjustedTime = new Date(
+    nTime.getUTCFullYear(),
+    nTime.getUTCMonth(),
+    nTime.getUTCDate(),
+    nTime.getUTCHours() + gmt, // Adjust hours based on GMT offset
+    nTime.getUTCMinutes(),
+    nTime.getUTCSeconds()
+  );
 
   return (
     <div
@@ -33,16 +44,16 @@ const Timer = ({ name, gmt, small }: TimerProps) => {
           small ? "w-full text-lg text-right" : "text-center text-xl18"
         }  text-[#e7e6e2] font-semibold font-mono rounded-lg`}
       >
-        {nTime.toLocaleTimeString("en-GB")}
+        {adjustedTime.toLocaleTimeString("en-GB")}
       </h2>
       <div className="w-36 rounded-lg"></div>
       {!small && (
-        <div className="flex flex-row px-3 gap-2 justify-end w-fullrounded-lg">
+        <div className="flex flex-row px-3 gap-2 justify-end w-full rounded-lg">
           <h2 className="text-4xl text-yellow-400 font-semibold rounded-lg">
             {name}
           </h2>
           <h2 className="text-4xl text-yellow-400 font-semibold rounded-lg">
-            {nTime.toLocaleDateString("en-GB", {
+            {adjustedTime.toLocaleDateString("en-GB", {
               weekday: "long",
               year: "numeric",
               month: "long",

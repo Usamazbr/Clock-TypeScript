@@ -1,10 +1,7 @@
 const Navbar = () => {
   return (
-    <div
-      className="flex flex-row h-16rounded-lg
-"
-    >
-      <div className="flex flex-col justify-center w-40 p-2 bg-red-700 rounded-lg">
+    <div className="flex flex-row h-16 rounded-lg">
+      <div className="flex flex-col h-4/5 justify-center w-40 p-2 bg-red-700 rounded-lg">
         <h2 className="font-semibold font-mono text-center text-xl text-white tracking-widest">
           TIME.PK
         </h2>
