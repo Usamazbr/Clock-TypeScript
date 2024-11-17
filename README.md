@@ -11,8 +11,9 @@ This is a fun project showcasing a clock built using **ReactJS** and **TypeScrip
 ## 📷 Preview
 Visit the live demo: [clock-type-script.vercel.app](https://clock-type-script.vercel.app)
 
-![image](https://github.com/user-attachments/assets/2949f394-32d7-4cad-8400-8b2b4bc670e2)
-
+<p align="center">
+  <img width="800" height="300" alt="Clock Preview" src="https://github.com/user-attachments/assets/947ea2dc-6f0f-441d-8814-28be11bf1447" border-radius: "15px" >
+</p>
 
 ## 🚀 Getting Started
 
@@ -56,6 +57,9 @@ This project is deployed on Vercel. You can access the live version here:
 ## 🖋️ Author
 Developed by [Usama Zubair](https://github.com/Usamazbr).
 Feel free to explore, modify, and contribute!
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
 
 ## ⭐ Don't forget to star the repository if you like this project!
 
