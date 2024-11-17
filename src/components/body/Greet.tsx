@@ -6,7 +6,7 @@ type GreetProps = {
 
 const Greet = (props: GreetProps) => {
   return (
-    <div className="flex flex-row pl-16rounded-lg">
+    <div className="flex flex-row h-[10%] px-12 rounded-lg">
       <div className="flex flex-row top-0 left-0 font-semibold font-mono rounded-lg">
         <h2 className="m-2 text-4xl text-blue-500 rounded-lg">
           {`${props.name} Time`}

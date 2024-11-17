@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Timer from "./Timer";
-import zones from "../data/capitals.json"; // Import the JSON file
+import zones from "../../data/capitals.json"; // Import the JSON file
 
 const TimeGauge = () => {
   const [selectedZone, setSelectedZone] = useState({ name: "Pakistan", gmt: 0 });
@@ -10,13 +10,13 @@ const TimeGauge = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col h-[90%] overflow-hidden space-y-2 rounded-lg">
       {/* Display the selected time zone prominently */}
       <Timer name={selectedZone.name} gmt={selectedZone.gmt} small={false} />
 
-      <div className="flex flex-row rounded-lg">
+      <div className="flex flex-row h-1/5 items-center rounded-lg">
         <div className="w-full"></div>
-        <div className="flex flex-row m-2 mr-14 mx-6 space-x-3">
+        <div className="flex flex-row mx-6 space-x-3">
           {zones.list.map((place) => (
             <div
               key={place.name}

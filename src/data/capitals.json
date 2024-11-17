@@ -1,28 +1,24 @@
 {
   "list": [
     {
-    "name": "Los Angeles",
-    "gmt": -8
-    },
-    {
-    "name": "New York",
-    "gmt": -5
-    },
-    {
-    "name": "London",
+    "name": "UTC",
     "gmt": 0
     },
     {
-    "name": "Paris",
-    "gmt": 1
+    "name": "Central",
+    "gmt": -6
     },
     {
-    "name": "Kyiv",
-    "gmt": 2
+    "name": "EST",
+    "gmt": -5
     },
     {
-    "name": "Beijing",
-    "gmt": 8
+    "name": "Turkey",
+    "gmt": 3
+    },
+    {
+    "name": "UAE",
+    "gmt": 4
     },
     {
     "name": "Tokyo",
