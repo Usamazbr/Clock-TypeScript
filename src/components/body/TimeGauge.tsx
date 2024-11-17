@@ -3,7 +3,7 @@ import Timer from "./Timer";
 import zones from "../../data/capitals.json"; // Import the JSON file
 
 const TimeGauge = () => {
-  const [selectedZone, setSelectedZone] = useState({ name: "Pakistan", gmt: 0 });
+  const [selectedZone, setSelectedZone] = useState({ name: "Pakistan", gmt: 5 });
 
   const handleSelectZone = (zone: { name: string; gmt: number }) => {
     setSelectedZone(zone);
