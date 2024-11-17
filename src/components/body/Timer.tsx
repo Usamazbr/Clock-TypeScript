@@ -31,8 +31,8 @@ const Timer = ({ name, gmt, small }: TimerProps) => {
   return (
     <div
       className={`flex flex-col mx-auto ${
-        small ? "p-1 px-2 bg-gray-800" : ""
-      } rounded-lg`}
+        small ? "p-1 px-2 w-36 bg-gray-800" : "relative justify-end h-4/5 w-full"
+      }  rounded-lg`}
     >
       {small && (
         <h1 className="text-xl text-green-400 text-right font-semibold rounded-lg">
@@ -40,15 +40,16 @@ const Timer = ({ name, gmt, small }: TimerProps) => {
         </h1>
       )}
       <h2
-        className={`mx-auto ${
-          small ? "w-full text-lg text-right" : "text-center text-xl18"
-        }  text-[#e7e6e2] font-semibold font-mono rounded-lg`}
+        className={`${
+          small
+            ? "w-full text-lg text-right"
+            : "absolute -top-20 left-28 text-center text-xl18 h-[87.5%]"
+        } text-[#e7e6e2] font-semibold font-mono rounded-lg`}
       >
         {adjustedTime.toLocaleTimeString("en-GB")}
       </h2>
-      <div className="w-36 rounded-lg"></div>
       {!small && (
-        <div className="flex flex-row px-3 gap-2 justify-end w-full rounded-lg">
+        <div className="flex flex-row px-3 gap-2 items-center justify-end h-[12.5%] w-full rounded-lg">
           <h2 className="text-4xl text-yellow-400 font-semibold rounded-lg">
             {name}
           </h2>
