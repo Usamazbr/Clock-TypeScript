@@ -10,6 +10,8 @@ This is a fun project showcasing a clock built using **ReactJS** and **TypeScrip
 
 ## 📷 Preview
 Visit the live demo: [clock-type-script.vercel.app](https://clock-type-script.vercel.app)
+![image](https://github.com/user-attachments/assets/9cc2d430-58f6-4574-a01e-9d2ce1dc58a1)
+
 
 ## 🚀 Getting Started
 
