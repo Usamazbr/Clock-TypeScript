@@ -11,8 +11,18 @@ This is a fun project showcasing a clock built using **ReactJS** and **TypeScrip
 ## 📷 Preview
 Visit the live demo: [clock-type-script.vercel.app](https://clock-type-script.vercel.app)
 
+<style>
+  .clock-preview {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+</style>
+
+
 <p align="center">
-  <img width="460" height="300" alt="Clock Preview" src="https://github.com/user-attachments/assets/2949f394-32d7-4cad-8400-8b2b4bc670e2" border-radius: "15px" >
+  <img src="https://github.com/user-attachments/assets/2949f394-32d7-4cad-8400-8b2b4bc670e2" alt="Clock Preview" class="clock-preview" />
 </p>
 
 
