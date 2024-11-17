@@ -25,6 +25,10 @@
     "gmt": 9
     },
     {
+    "name": "Sydney",
+    "gmt": 11
+    },
+    {
     "name": "Pakistan",
     "gmt": 5
     }

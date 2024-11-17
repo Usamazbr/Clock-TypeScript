@@ -31,7 +31,7 @@ const Timer = ({ name, gmt, small }: TimerProps) => {
   return (
     <div
       className={`flex flex-col mx-auto ${
-        small ? "p-1 px-2 w-36 bg-gray-800" : "relative justify-end h-4/5 w-full"
+        small ? "p-1 px-2 w-32 bg-gray-800" : "relative justify-end h-4/5 w-full"
       }  rounded-lg`}
     >
       {small && (
