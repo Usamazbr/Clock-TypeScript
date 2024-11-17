@@ -51,7 +51,7 @@ This project is deployed on Vercel. You can access the live version here:
 [clock-type-script.vercel.app](https://clock-type-script.vercel.app)
 
 ## 🖋️ Author
-Developed by [Your Name](https://github.com/Usamazbr).
+Developed by [Usama Zubair](https://github.com/Usamazbr).
 Feel free to explore, modify, and contribute!
 
 ## ⭐ Don't forget to star the repository if you like this project!
