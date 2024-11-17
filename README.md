@@ -57,6 +57,9 @@ This project is deployed on Vercel. You can access the live version here:
 Developed by [Usama Zubair](https://github.com/Usamazbr).
 Feel free to explore, modify, and contribute!
 
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
+
 ## ⭐ Don't forget to star the repository if you like this project!
 
 ### Steps for Completion:
