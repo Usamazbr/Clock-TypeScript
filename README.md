@@ -12,7 +12,7 @@ This is a fun project showcasing a clock built using **ReactJS** and **TypeScrip
 Visit the live demo: [clock-type-script.vercel.app](https://clock-type-script.vercel.app)
 
 <p align="center">
-  <img width="600" height="300" alt="Clock Preview" src="https://github.com/user-attachments/assets/2949f394-32d7-4cad-8400-8b2b4bc670e2" border-radius: "15px" >
+  <img width="800" height="450" alt="Clock Preview" src="https://github.com/user-attachments/assets/2949f394-32d7-4cad-8400-8b2b4bc670e2" border-radius: "15px" >
 </p>
 
 
