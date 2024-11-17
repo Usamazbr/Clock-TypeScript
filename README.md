@@ -38,7 +38,7 @@ Ensure you have the following installed:
     # or
     yarn start
     ```
-4. Open the app in your browser at `http://localhost:3000`.
+4. Open the app in your browser at ``http://localhost:3000``.
 
 ## 🛠️ Technologies Used
 - **ReactJS**: For building the user interface.
