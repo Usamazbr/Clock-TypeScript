@@ -16,7 +16,7 @@ const TimeGauge = () => {
 
       <div className="flex flex-row h-1/5 items-center rounded-lg">
         <div className="w-full"></div>
-        <div className="flex flex-row mx-6 space-x-3">
+        <div className="flex flex-row space-x-3">
           {zones.list.map((place) => (
             <div
               key={place.name}
